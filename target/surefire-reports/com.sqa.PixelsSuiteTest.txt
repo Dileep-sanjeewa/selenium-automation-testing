@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.sqa.PixelsSuiteTest
--------------------------------------------------------------------------------
-Tests run: 48, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 275.6 s -- in com.sqa.PixelsSuiteTest
