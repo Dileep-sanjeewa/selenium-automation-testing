@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PixelsSuite - Selenium Test Report</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #0d1117;
+      color: #e6edf3;
+      min-height: 100vh;
+      padding: 40px 20px;
+    }
+
+    .container { max-width: 960px; margin: 0 auto; }
+
+    /* Header */
+    .report-header {
+      background: linear-gradient(135deg, #1a1f2e 0%, #161b27 100%);
+      border: 1px solid #30363d;
+      border-radius: 16px;
+      padding: 36px 40px;
+      margin-bottom: 32px;
+      position: relative;
+      overflow: hidden;
+    }
+    .report-header::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, #7c3aed, #2563eb, #06b6d4);
+    }
+    .report-header h1 {
+      font-size: 28px;
+      font-weight: 700;
+      color: #f0f6fc;
+      margin-bottom: 6px;
+    }
+    .report-header .subtitle {
+      font-size: 14px;
+      color: #8b949e;
+      margin-bottom: 24px;
+    }
+    .meta-row {
+      display: flex;
+      gap: 32px;
+      flex-wrap: wrap;
+    }
+    .meta-item label {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #6e7681;
+      display: block;
+      margin-bottom: 4px;
+    }
+    .meta-item span {
+      font-size: 13px;
+      color: #c9d1d9;
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    /* Summary Cards */
+    .summary-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      margin-bottom: 32px;
+    }
+    .summary-card {
+      background: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.2s;
+    }
+    .summary-card:hover { transform: translateY(-2px); }
+    .summary-card .num {
+      font-size: 36px;
+      font-weight: 700;
+      line-height: 1;
+      margin-bottom: 6px;
+    }
+    .summary-card .lbl {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      color: #8b949e;
+    }
+    .card-total .num   { color: #58a6ff; }
+    .card-pass  .num   { color: #3fb950; }
+    .card-fail  .num   { color: #f85149; }
+    .card-rate  .num   { color: #d2a8ff; }
+
+    .card-total { border-top: 3px solid #58a6ff; }
+    .card-pass  { border-top: 3px solid #3fb950; }
+    .card-fail  { border-top: 3px solid #f85149; }
+    .card-rate  { border-top: 3px solid #d2a8ff; }
+
+    /* Progress bar */
+    .progress-wrap {
+      background: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin-bottom: 32px;
+    }
+    .progress-label {
+      display: flex;
+      justify-content: space-between;
+      font-size: 13px;
+      color: #8b949e;
+      margin-bottom: 10px;
+    }
+    .progress-bar-bg {
+      background: #21262d;
+      border-radius: 999px;
+      height: 10px;
+      overflow: hidden;
+    }
+    .progress-bar-fill {
+      height: 100%;
+      border-radius: 999px;
+      background: linear-gradient(90deg, #3fb950, #2ea043);
+      width: 95%;
+      transition: width 1s ease;
+    }
+
+    /* Test Results Table */
+    .results-section {
+      background: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 12px;
+      overflow: hidden;
+      margin-bottom: 24px;
+    }
+    .results-section-header {
+      padding: 16px 24px;
+      background: #1c2128;
+      border-bottom: 1px solid #30363d;
+      font-size: 14px;
+      font-weight: 600;
+      color: #f0f6fc;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .results-section-header .dot {
+      width: 8px; height: 8px;
+      border-radius: 50%;
+    }
+    .dot-pass { background: #3fb950; }
+    .dot-fail { background: #f85149; }
+
+    table { width: 100%; border-collapse: collapse; }
+    th {
+      background: #1c2128;
+      padding: 12px 16px;
+      text-align: left;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      color: #6e7681;
+      border-bottom: 1px solid #30363d;
+    }
+    td {
+      padding: 12px 16px;
+      font-size: 13px;
+      border-bottom: 1px solid #21262d;
+      vertical-align: top;
+    }
+    tr:last-child td { border-bottom: none; }
+    tr:hover td { background: #1c2128; }
+
+    .tc-id {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12px;
+      color: #8b949e;
+      white-space: nowrap;
+    }
+    .tc-name { color: #e6edf3; font-weight: 500; }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 3px 10px;
+      border-radius: 999px;
+      font-size: 11px;
+      font-weight: 600;
+      font-family: 'JetBrains Mono', monospace;
+      white-space: nowrap;
+    }
+    .badge-pass { background: rgba(63,185,80,0.15); color: #3fb950; border: 1px solid rgba(63,185,80,0.3); }
+    .badge-fail { background: rgba(248,81,73,0.15); color: #f85149; border: 1px solid rgba(248,81,73,0.3); }
+    .fail-note {
+      font-size: 11px;
+      color: #f85149;
+      margin-top: 4px;
+      font-family: 'JetBrains Mono', monospace;
+      line-height: 1.5;
+    }
+
+    /* Footer */
+    .report-footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 12px;
+      color: #484f58;
+    }
+    @media (max-width: 600px) {
+      .summary-grid { grid-template-columns: repeat(2,1fr); }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <!-- Header -->
+  <div class="report-header">
+    <h1>🧪 PixelsSuite Selenium Test Report</h1>
+    <p class="subtitle">Automated UI Test Suite · <a href="https://www.pixelssuite.com/" style="color:#58a6ff;text-decoration:none;">https://www.pixelssuite.com/</a></p>
+    <div class="meta-row">
+      <div class="meta-item"><label>Date &amp; Time</label><span>Apr 18, 2026 · 1:40 PM</span></div>
+      <div class="meta-item"><label>Browser</label><span>Chrome 147.0.7727.101</span></div>
+      <div class="meta-item"><label>Selenium</label><span>4.18.1</span></div>
+      <div class="meta-item"><label>Java</label><span>17.0.18</span></div>
+      <div class="meta-item"><label>OS</label><span>Windows 11</span></div>
+    </div>
+  </div>
+
+  <!-- Summary Cards -->
+  <div class="summary-grid">
+    <div class="summary-card card-total">
+      <div class="num">40</div>
+      <div class="lbl">Total Tests</div>
+    </div>
+    <div class="summary-card card-pass">
+      <div class="num">38</div>
+      <div class="lbl">Passed</div>
+    </div>
+    <div class="summary-card card-fail">
+      <div class="num">2</div>
+      <div class="lbl">Failed</div>
+    </div>
+    <div class="summary-card card-rate">
+      <div class="num">95%</div>
+      <div class="lbl">Pass Rate</div>
+    </div>
+  </div>
+
+  <!-- Progress Bar -->
+  <div class="progress-wrap">
+    <div class="progress-label">
+      <span>Pass Rate</span>
+      <span>38 / 40 tests passed</span>
+    </div>
+    <div class="progress-bar-bg">
+      <div class="progress-bar-fill"></div>
+    </div>
+  </div>
+
+  <!-- PASS Results -->
+  <div class="results-section">
+    <div class="results-section-header"><span class="dot dot-pass"></span> Passed Tests (38)</div>
+    <table>
+      <thead>
+        <tr><th>#</th><th>Test Case</th><th>Status</th></tr>
+      </thead>
+      <tbody>
+        <tr><td class="tc-id">TC01</td><td class="tc-name">Homepage Load</td><td><span class="badge badge-pass">✓ PASS</span></td></tr>
+        <tr><td class="tc-id">TC02</td><td class="tc-name">Title Exists</td><td><span class="badge badge-pass">✓ PASS</span></td></tr>
+        <tr><td class="tc-id">TC04</td><td class="tc-name">Links Present</td><td><span class="badge badge-pass">✓ PASS</span></td></tr>
+        <tr><td class="tc-id">TC05</td><td class="tc-name">Section Visible</td><td><span class="badge badge-pass">✓ PASS</span></td></tr>
+        <tr><td class="tc-id">TC06</td><td class="tc-name">Buttons Present</td><td><span class="badge badge-pass">✓ PASS</span></td></tr>
+        <tr><td class="tc-id">TC07</td><td class="tc-name">Footer Visible</td><td><span class="badge badge-pass">✓ PASS</span></td></tr>
+        <tr><td class="tc-id">TC08</td><td class="tc-name">Images Present</td><td><span class="badge badge-pass">✓ PASS</span></td></tr>
+        <tr><td class="tc-id">TC09</td><td class="tc-name">Input Fields Exist</td><td><span class="badge badge-pass">✓ PASS</span></td></tr>
+        <tr><td class="tc-id">TC10</td><td class="tc-name">Input Typing</td><td><span class="badge badge-pass">✓ PASS</span></td></tr>
+        <tr><td class="tc-id">TC11</td><td class="tc-name">Scroll Page</td><td><span class="badge badge-pass">✓ PASS</span></td></tr>
+        <tr><td class="tc-id">TC12</td><td class="tc-name">Footer Text Exists</td><td><span class="badge badge-pass">✓ PASS</span></td></tr>
+        <tr><td class="tc-id">TC13</td><td class="tc-name">Body Text Exists</td><td><span class="badge badge-pass">✓ PASS</span></td></tr>
+        <tr><td class="tc-id">TC14</td><td class="tc-name">Link Click</td><td><span class="badge badge-pass">✓ PASS</span></td></tr>
+        <tr><td class="tc-id">TC15</td><td class="tc-name">Page Refresh</td><td><span class="badge badge-pass">✓ PASS</span></td></tr>
+        <tr><td class="tc-id">TC16</td><td class="tc-name">URL Validation</td><td><span class="badge badge-pass">✓ PASS</span></td></tr>
+        <tr><td class="tc-id">TC17</td><td class="tc-name">Back/Forward Navigation</td><td><span class="badge badge-pass">✓ PASS</span></td></tr>
+        <tr><td class="tc-id">TC18</td><td class="tc-name">Forward Navigation</td><td><span class="badge badge-pass">✓ PASS</span></td></tr>
+        <tr><td class="tc-id">TC19</td><td class="tc-name">Resize Screen</td><td><span class="badge badge-pass">✓ PASS</span></td></tr>
+        <tr><td class="tc-id">TC20</td><td class="tc-name">Wait Load</td><td><span class="badge badge-pass">✓ PASS</span></td></tr>
+        <tr><td class="tc-id">TC21</td><td class="tc-name">Images Loaded</td><td><span class="badge badge-pass">✓ PASS</span></td></tr>
+        <tr><td class="tc-id">TC22</td><td class="tc-name">Multiple Link Clicks</td><td><span class="badge badge-pass">✓ PASS</span></td></tr>
+        <tr><td class="tc-id">TC23</td><td class="tc-name">Multiple Refresh</td><td><span class="badge badge-pass">✓ PASS</span></td></tr>
+        <tr><td class="tc-id">TC24</td><td class="tc-name">Scroll Top</td><td><span class="badge badge-pass">✓ PASS</span></td></tr>
+        <tr><td class="tc-id">TC25</td><td class="tc-name">Button Click</td><td><span class="badge badge-pass">✓ PASS</span></td></tr>
+        <tr><td class="tc-id">TC26</td><td class="tc-name">Sections Count</td><td><span class="badge badge-pass">✓ PASS</span></td></tr>
+        <tr><td class="tc-id">TC27</td><td class="tc-name">Mobile View</td><td><span class="badge badge-pass">✓ PASS</span></td></tr>
+        <tr><td class="tc-id">TC28</td><td class="tc-name">About Section Exists</td><td><span class="badge badge-pass">✓ PASS</span></td></tr>
+        <tr><td class="tc-id">TC29</td><td class="tc-name">Services Section Exists</td><td><span class="badge badge-pass">✓ PASS</span></td></tr>
+        <tr><td class="tc-id">TC30</td><td class="tc-name">Contact Section Exists</td><td><span class="badge badge-pass">✓ PASS</span></td></tr>
+        <tr><td class="tc-id">TC31</td><td class="tc-name">Navigation Links Count</td><td><span class="badge badge-pass">✓ PASS</span></td></tr>
+        <tr><td class="tc-id">TC32</td><td class="tc-name">Footer Links Exist</td><td><span class="badge badge-pass">✓ PASS</span></td></tr>
+        <tr><td class="tc-id">TC35</td><td class="tc-name">External/Internal Link Click</td><td><span class="badge badge-pass">✓ PASS</span></td></tr>
+        <tr><td class="tc-id">TC36</td><td class="tc-name">Mobile Responsive Check</td><td><span class="badge badge-pass">✓ PASS</span></td></tr>
+        <tr><td class="tc-id">TC37</td><td class="tc-name">Page Source Not Empty</td><td><span class="badge badge-pass">✓ PASS</span></td></tr>
+        <tr><td class="tc-id">TC38</td><td class="tc-name">Page Reload Stability</td><td><span class="badge badge-pass">✓ PASS</span></td></tr>
+        <tr><td class="tc-id">TC39</td><td class="tc-name">Scroll Down Fully</td><td><span class="badge badge-pass">✓ PASS</span></td></tr>
+        <tr><td class="tc-id">TC40</td><td class="tc-name">Back to Top</td><td><span class="badge badge-pass">✓ PASS</span></td></tr>
+        <tr><td class="tc-id">TC33</td><td class="tc-name">Logo Visible</td><td><span class="badge badge-pass">✓ PASS</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- FAIL Results -->
+  <div class="results-section">
+    <div class="results-section-header"><span class="dot dot-fail"></span> Failed Tests (2)</div>
+    <table>
+      <thead>
+        <tr><th>#</th><th>Test Case</th><th>Status</th><th>Reason</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="tc-id">TC03</td>
+          <td class="tc-name">Header Visible</td>
+          <td><span class="badge badge-fail">✗ FAIL</span></td>
+          <td>
+            <div class="fail-note">NoSuchElementException: Unable to locate element<br>Selector: &lt;header&gt; tag not found in DOM.<br>→ Page may use &lt;div&gt; instead of semantic &lt;header&gt;.</div>
+          </td>
+        </tr>
+        <tr>
+          <td class="tc-id">TC34</td>
+          <td class="tc-name">Sections Present</td>
+          <td><span class="badge badge-fail">✗ FAIL</span></td>
+          <td>
+            <div class="fail-note">NoSuchElementException: Unable to locate element<br>Selector: &lt;img&gt; tag — TC33 Logo Visible ran after window resize.<br>→ Element may not be visible at smaller viewport size.</div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="report-footer">
+    Generated by PixelsSuite Selenium Test Suite · Selenium 4.18.1 / Java 17 / Chrome 147
+  </div>
+
+</div>
+</body>
+</html>

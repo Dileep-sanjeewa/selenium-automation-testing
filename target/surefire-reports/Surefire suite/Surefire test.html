@@ -1,0 +1,320 @@
+<html>
+<head>
+<title>TestNG:  Surefire test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Surefire test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>48/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu May 14 10:35:42 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>270 seconds (270564 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.sqa.PixelsSuiteTest.TC_035_interaction_test()'><b>TC_035_interaction_test</b><br>Test class: com.sqa.PixelsSuiteTest</td>
+<td></td>
+<td>0</td>
+<td>com.sqa.PixelsSuiteTest@4803b726</td></tr>
+<tr>
+<td title='com.sqa.PixelsSuiteTest.TC_022_svg_loaded()'><b>TC_022_svg_loaded</b><br>Test class: com.sqa.PixelsSuiteTest</td>
+<td></td>
+<td>0</td>
+<td>com.sqa.PixelsSuiteTest@4803b726</td></tr>
+<tr>
+<td title='com.sqa.PixelsSuiteTest.TC_045_dom_stability()'><b>TC_045_dom_stability</b><br>Test class: com.sqa.PixelsSuiteTest</td>
+<td></td>
+<td>0</td>
+<td>com.sqa.PixelsSuiteTest@4803b726</td></tr>
+<tr>
+<td title='com.sqa.PixelsSuiteTest.TC_010_window_check()'><b>TC_010_window_check</b><br>Test class: com.sqa.PixelsSuiteTest</td>
+<td></td>
+<td>0</td>
+<td>com.sqa.PixelsSuiteTest@4803b726</td></tr>
+<tr>
+<td title='com.sqa.PixelsSuiteTest.TC_026_layout_check()'><b>TC_026_layout_check</b><br>Test class: com.sqa.PixelsSuiteTest</td>
+<td></td>
+<td>0</td>
+<td>com.sqa.PixelsSuiteTest@4803b726</td></tr>
+<tr>
+<td title='com.sqa.PixelsSuiteTest.TC_008_page_reload()'><b>TC_008_page_reload</b><br>Test class: com.sqa.PixelsSuiteTest</td>
+<td></td>
+<td>2</td>
+<td>com.sqa.PixelsSuiteTest@4803b726</td></tr>
+<tr>
+<td title='com.sqa.PixelsSuiteTest.TC_033_refresh_stability()'><b>TC_033_refresh_stability</b><br>Test class: com.sqa.PixelsSuiteTest</td>
+<td></td>
+<td>5</td>
+<td>com.sqa.PixelsSuiteTest@4803b726</td></tr>
+<tr>
+<td title='com.sqa.PixelsSuiteTest.TC_015_body_not_empty()'><b>TC_015_body_not_empty</b><br>Test class: com.sqa.PixelsSuiteTest</td>
+<td></td>
+<td>0</td>
+<td>com.sqa.PixelsSuiteTest@4803b726</td></tr>
+<tr>
+<td title='com.sqa.PixelsSuiteTest.TC_003_header_exists()'><b>TC_003_header_exists</b><br>Test class: com.sqa.PixelsSuiteTest</td>
+<td></td>
+<td>0</td>
+<td>com.sqa.PixelsSuiteTest@4803b726</td></tr>
+<tr>
+<td title='com.sqa.PixelsSuiteTest.TC_046_element_presence()'><b>TC_046_element_presence</b><br>Test class: com.sqa.PixelsSuiteTest</td>
+<td></td>
+<td>0</td>
+<td>com.sqa.PixelsSuiteTest@4803b726</td></tr>
+<tr>
+<td title='com.sqa.PixelsSuiteTest.TC_023_forms_exist()'><b>TC_023_forms_exist</b><br>Test class: com.sqa.PixelsSuiteTest</td>
+<td></td>
+<td>0</td>
+<td>com.sqa.PixelsSuiteTest@4803b726</td></tr>
+<tr>
+<td title='com.sqa.PixelsSuiteTest.TC_039_desktop_view()'><b>TC_039_desktop_view</b><br>Test class: com.sqa.PixelsSuiteTest</td>
+<td></td>
+<td>0</td>
+<td>com.sqa.PixelsSuiteTest@4803b726</td></tr>
+<tr>
+<td title='com.sqa.PixelsSuiteTest.TC_038_tablet_view()'><b>TC_038_tablet_view</b><br>Test class: com.sqa.PixelsSuiteTest</td>
+<td></td>
+<td>0</td>
+<td>com.sqa.PixelsSuiteTest@4803b726</td></tr>
+<tr>
+<td title='com.sqa.PixelsSuiteTest.TC_050_teardown_check()'><b>TC_050_teardown_check</b><br>Test class: com.sqa.PixelsSuiteTest</td>
+<td></td>
+<td>0</td>
+<td>com.sqa.PixelsSuiteTest@4803b726</td></tr>
+<tr>
+<td title='com.sqa.PixelsSuiteTest.TC_009_scroll_test()'><b>TC_009_scroll_test</b><br>Test class: com.sqa.PixelsSuiteTest</td>
+<td></td>
+<td>0</td>
+<td>com.sqa.PixelsSuiteTest@4803b726</td></tr>
+<tr>
+<td title='com.sqa.PixelsSuiteTest.TC_006_links_exist()'><b>TC_006_links_exist</b><br>Test class: com.sqa.PixelsSuiteTest</td>
+<td></td>
+<td>0</td>
+<td>com.sqa.PixelsSuiteTest@4803b726</td></tr>
+<tr>
+<td title='com.sqa.PixelsSuiteTest.TC_025_text_visible()'><b>TC_025_text_visible</b><br>Test class: com.sqa.PixelsSuiteTest</td>
+<td></td>
+<td>0</td>
+<td>com.sqa.PixelsSuiteTest@4803b726</td></tr>
+<tr>
+<td title='com.sqa.PixelsSuiteTest.TC_012_links_clickable()'><b>TC_012_links_clickable</b><br>Test class: com.sqa.PixelsSuiteTest</td>
+<td></td>
+<td>0</td>
+<td>com.sqa.PixelsSuiteTest@4803b726</td></tr>
+<tr>
+<td title='com.sqa.PixelsSuiteTest.TC_013_external_links()'><b>TC_013_external_links</b><br>Test class: com.sqa.PixelsSuiteTest</td>
+<td></td>
+<td>0</td>
+<td>com.sqa.PixelsSuiteTest@4803b726</td></tr>
+<tr>
+<td title='com.sqa.PixelsSuiteTest.TC_001_homepage_load()'><b>TC_001_homepage_load</b><br>Test class: com.sqa.PixelsSuiteTest</td>
+<td></td>
+<td>1</td>
+<td>com.sqa.PixelsSuiteTest@4803b726</td></tr>
+<tr>
+<td title='com.sqa.PixelsSuiteTest.TC_042_url_check()'><b>TC_042_url_check</b><br>Test class: com.sqa.PixelsSuiteTest</td>
+<td></td>
+<td>0</td>
+<td>com.sqa.PixelsSuiteTest@4803b726</td></tr>
+<tr>
+<td title='com.sqa.PixelsSuiteTest.TC_031_js_execution()'><b>TC_031_js_execution</b><br>Test class: com.sqa.PixelsSuiteTest</td>
+<td></td>
+<td>0</td>
+<td>com.sqa.PixelsSuiteTest@4803b726</td></tr>
+<tr>
+<td title='com.sqa.PixelsSuiteTest.TC_037_responsiveness_check()'><b>TC_037_responsiveness_check</b><br>Test class: com.sqa.PixelsSuiteTest</td>
+<td></td>
+<td>0</td>
+<td>com.sqa.PixelsSuiteTest@4803b726</td></tr>
+<tr>
+<td title='com.sqa.PixelsSuiteTest.TC_047_UI_consistency()'><b>TC_047_UI_consistency</b><br>Test class: com.sqa.PixelsSuiteTest</td>
+<td></td>
+<td>0</td>
+<td>com.sqa.PixelsSuiteTest@4803b726</td></tr>
+<tr>
+<td title='com.sqa.PixelsSuiteTest.TC_030_stability_check()'><b>TC_030_stability_check</b><br>Test class: com.sqa.PixelsSuiteTest</td>
+<td></td>
+<td>0</td>
+<td>com.sqa.PixelsSuiteTest@4803b726</td></tr>
+<tr>
+<td title='com.sqa.PixelsSuiteTest.TC_016_ui_render()'><b>TC_016_ui_render</b><br>Test class: com.sqa.PixelsSuiteTest</td>
+<td></td>
+<td>0</td>
+<td>com.sqa.PixelsSuiteTest@4803b726</td></tr>
+<tr>
+<td title='com.sqa.PixelsSuiteTest.TC_017_dom_exists()'><b>TC_017_dom_exists</b><br>Test class: com.sqa.PixelsSuiteTest</td>
+<td></td>
+<td>0</td>
+<td>com.sqa.PixelsSuiteTest@4803b726</td></tr>
+<tr>
+<td title='com.sqa.PixelsSuiteTest.TC_020_page_title_check()'><b>TC_020_page_title_check</b><br>Test class: com.sqa.PixelsSuiteTest</td>
+<td></td>
+<td>0</td>
+<td>com.sqa.PixelsSuiteTest@4803b726</td></tr>
+<tr>
+<td title='com.sqa.PixelsSuiteTest.TC_043_refresh_stability()'><b>TC_043_refresh_stability</b><br>Test class: com.sqa.PixelsSuiteTest</td>
+<td></td>
+<td>1</td>
+<td>com.sqa.PixelsSuiteTest@4803b726</td></tr>
+<tr>
+<td title='com.sqa.PixelsSuiteTest.TC_027_reload_check()'><b>TC_027_reload_check</b><br>Test class: com.sqa.PixelsSuiteTest</td>
+<td></td>
+<td>0</td>
+<td>com.sqa.PixelsSuiteTest@4803b726</td></tr>
+<tr>
+<td title='com.sqa.PixelsSuiteTest.TC_032_page_source_check()'><b>TC_032_page_source_check</b><br>Test class: com.sqa.PixelsSuiteTest</td>
+<td></td>
+<td>0</td>
+<td>com.sqa.PixelsSuiteTest@4803b726</td></tr>
+<tr>
+<td title='com.sqa.PixelsSuiteTest.TC_041_back_forward_navigation()'><b>TC_041_back_forward_navigation</b><br>Test class: com.sqa.PixelsSuiteTest</td>
+<td></td>
+<td>1</td>
+<td>com.sqa.PixelsSuiteTest@4803b726</td></tr>
+<tr>
+<td title='com.sqa.PixelsSuiteTest.TC_040_scroll_test()'><b>TC_040_scroll_test</b><br>Test class: com.sqa.PixelsSuiteTest</td>
+<td></td>
+<td>0</td>
+<td>com.sqa.PixelsSuiteTest@4803b726</td></tr>
+<tr>
+<td title='com.sqa.PixelsSuiteTest.TC_007_buttons_exist()'><b>TC_007_buttons_exist</b><br>Test class: com.sqa.PixelsSuiteTest</td>
+<td></td>
+<td>0</td>
+<td>com.sqa.PixelsSuiteTest@4803b726</td></tr>
+<tr>
+<td title='com.sqa.PixelsSuiteTest.TC_034_anchor_check()'><b>TC_034_anchor_check</b><br>Test class: com.sqa.PixelsSuiteTest</td>
+<td></td>
+<td>0</td>
+<td>com.sqa.PixelsSuiteTest@4803b726</td></tr>
+<tr>
+<td title='com.sqa.PixelsSuiteTest.TC_018_scroll_top_bottom()'><b>TC_018_scroll_top_bottom</b><br>Test class: com.sqa.PixelsSuiteTest</td>
+<td></td>
+<td>0</td>
+<td>com.sqa.PixelsSuiteTest@4803b726</td></tr>
+<tr>
+<td title='com.sqa.PixelsSuiteTest.TC_019_elements_loaded()'><b>TC_019_elements_loaded</b><br>Test class: com.sqa.PixelsSuiteTest</td>
+<td></td>
+<td>0</td>
+<td>com.sqa.PixelsSuiteTest@4803b726</td></tr>
+<tr>
+<td title='com.sqa.PixelsSuiteTest.TC_036_reload_test()'><b>TC_036_reload_test</b><br>Test class: com.sqa.PixelsSuiteTest</td>
+<td></td>
+<td>2</td>
+<td>com.sqa.PixelsSuiteTest@4803b726</td></tr>
+<tr>
+<td title='com.sqa.PixelsSuiteTest.TC_029_hover_test()'><b>TC_029_hover_test</b><br>Test class: com.sqa.PixelsSuiteTest</td>
+<td></td>
+<td>0</td>
+<td>com.sqa.PixelsSuiteTest@4803b726</td></tr>
+<tr>
+<td title='com.sqa.PixelsSuiteTest.TC_011_nav_exists()'><b>TC_011_nav_exists</b><br>Test class: com.sqa.PixelsSuiteTest</td>
+<td></td>
+<td>0</td>
+<td>com.sqa.PixelsSuiteTest@4803b726</td></tr>
+<tr>
+<td title='com.sqa.PixelsSuiteTest.TC_044_page_stability_check()'><b>TC_044_page_stability_check</b><br>Test class: com.sqa.PixelsSuiteTest</td>
+<td></td>
+<td>0</td>
+<td>com.sqa.PixelsSuiteTest@4803b726</td></tr>
+<tr>
+<td title='com.sqa.PixelsSuiteTest.TC_049_final_health_check()'><b>TC_049_final_health_check</b><br>Test class: com.sqa.PixelsSuiteTest</td>
+<td></td>
+<td>0</td>
+<td>com.sqa.PixelsSuiteTest@4803b726</td></tr>
+<tr>
+<td title='com.sqa.PixelsSuiteTest.TC_014_page_stability()'><b>TC_014_page_stability</b><br>Test class: com.sqa.PixelsSuiteTest</td>
+<td></td>
+<td>1</td>
+<td>com.sqa.PixelsSuiteTest@4803b726</td></tr>
+<tr>
+<td title='com.sqa.PixelsSuiteTest.TC_028_click_test()'><b>TC_028_click_test</b><br>Test class: com.sqa.PixelsSuiteTest</td>
+<td></td>
+<td>0</td>
+<td>com.sqa.PixelsSuiteTest@4803b726</td></tr>
+<tr>
+<td title='com.sqa.PixelsSuiteTest.TC_005_footer_exists()'><b>TC_005_footer_exists</b><br>Test class: com.sqa.PixelsSuiteTest</td>
+<td></td>
+<td>1</td>
+<td>com.sqa.PixelsSuiteTest@4803b726</td></tr>
+<tr>
+<td title='com.sqa.PixelsSuiteTest.TC_002_body_visible()'><b>TC_002_body_visible</b><br>Test class: com.sqa.PixelsSuiteTest</td>
+<td></td>
+<td>1</td>
+<td>com.sqa.PixelsSuiteTest@4803b726</td></tr>
+<tr>
+<td title='com.sqa.PixelsSuiteTest.TC_048_reload_consistency()'><b>TC_048_reload_consistency</b><br>Test class: com.sqa.PixelsSuiteTest</td>
+<td></td>
+<td>2</td>
+<td>com.sqa.PixelsSuiteTest@4803b726</td></tr>
+<tr>
+<td title='com.sqa.PixelsSuiteTest.TC_024_inputs_exist()'><b>TC_024_inputs_exist</b><br>Test class: com.sqa.PixelsSuiteTest</td>
+<td></td>
+<td>0</td>
+<td>com.sqa.PixelsSuiteTest@4803b726</td></tr>
+</table><p>
+</body>
+</html>

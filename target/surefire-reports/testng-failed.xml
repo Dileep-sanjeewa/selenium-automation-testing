@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Surefire suite]" verbose="0">
+  <test thread-count="5" name="Surefire test(failed)" verbose="0">
+    <classes>
+      <class name="com.sqa.PixelsSuiteTest">
+        <methods>
+          <include name="TC_034_anchor_check"/>
+          <include name="TC_013_external_links"/>
+          <include name="TC_008_page_reload"/>
+          <include name="TC_024_inputs_exist"/>
+          <include name="TC_014_page_stability"/>
+          <include name="TC_035_interaction_test"/>
+          <include name="TC_027_reload_check"/>
+          <include name="TC_001_homepage_load"/>
+          <include name="TC_033_refresh_stability"/>
+          <include name="TC_015_body_not_empty"/>
+          <include name="TC_044_page_stability_check"/>
+          <include name="TC_025_text_visible"/>
+          <include name="TC_043_refresh_stability"/>
+          <include name="TC_007_buttons_exist"/>
+          <include name="TC_023_forms_exist"/>
+          <include name="TC_036_reload_test"/>
+          <include name="TC_020_page_title_check"/>
+          <include name="TC_022_svg_loaded"/>
+          <include name="TC_031_js_execution"/>
+          <include name="TC_029_hover_test"/>
+          <include name="TC_050_teardown_check"/>
+          <include name="TC_009_scroll_test"/>
+          <include name="TC_002_body_visible"/>
+          <include name="TC_048_reload_consistency"/>
+          <include name="setup"/>
+          <include name="TC_037_responsiveness_check"/>
+          <include name="TC_006_links_exist"/>
+          <include name="TC_046_element_presence"/>
+          <include name="TC_010_window_check"/>
+          <include name="TC_016_ui_render"/>
+          <include name="TC_003_header_exists"/>
+          <include name="TC_041_back_forward_navigation"/>
+          <include name="TC_011_nav_exists"/>
+          <include name="TC_047_UI_consistency"/>
+          <include name="TC_005_footer_exists"/>
+          <include name="TC_049_final_health_check"/>
+          <include name="TC_019_elements_loaded"/>
+          <include name="tearDown"/>
+          <include name="TC_030_stability_check"/>
+          <include name="TC_039_desktop_view"/>
+          <include name="TC_045_dom_stability"/>
+          <include name="TC_038_tablet_view"/>
+          <include name="TC_040_scroll_test"/>
+          <include name="TC_026_layout_check"/>
+          <include name="openSite"/>
+          <include name="TC_018_scroll_top_bottom"/>
+          <include name="TC_012_links_clickable"/>
+          <include name="TC_017_dom_exists"/>
+          <include name="TC_032_page_source_check"/>
+          <include name="TC_042_url_check"/>
+          <include name="TC_028_click_test"/>
+        </methods>
+      </class> <!-- com.sqa.PixelsSuiteTest -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->

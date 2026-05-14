@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="48" passed="48" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-05-14T10:35:42 IST" name="Surefire suite" finished-at="2026-05-14T10:40:12 IST" duration-ms="270564">
+    <groups>
+    </groups>
+    <test started-at="2026-05-14T10:35:42 IST" name="Surefire test" finished-at="2026-05-14T10:40:12 IST" duration-ms="270564">
+      <class name="com.sqa.PixelsSuiteTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.sqa.PixelsSuiteTest@4803b726]" started-at="2026-05-14T10:35:42 IST" name="setup" finished-at="2026-05-14T10:39:19 IST" duration-ms="216463" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="openSite()[pri:0, instance:com.sqa.PixelsSuiteTest@4803b726]" started-at="2026-05-14T10:39:19 IST" name="openSite" finished-at="2026-05-14T10:39:32 IST" duration-ms="12786" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openSite -->
+        <test-method signature="TC_001_homepage_load()[pri:0, instance:com.sqa.PixelsSuiteTest@4803b726]" started-at="2026-05-14T10:39:32 IST" name="TC_001_homepage_load" finished-at="2026-05-14T10:39:33 IST" duration-ms="1331" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_001_homepage_load -->
+        <test-method is-config="true" signature="openSite()[pri:0, instance:com.sqa.PixelsSuiteTest@4803b726]" started-at="2026-05-14T10:39:33 IST" name="openSite" finished-at="2026-05-14T10:39:33 IST" duration-ms="451" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openSite -->
+        <test-method signature="TC_002_body_visible()[pri:0, instance:com.sqa.PixelsSuiteTest@4803b726]" started-at="2026-05-14T10:39:33 IST" name="TC_002_body_visible" finished-at="2026-05-14T10:39:34 IST" duration-ms="1067" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_002_body_visible -->
+        <test-method is-config="true" signature="openSite()[pri:0, instance:com.sqa.PixelsSuiteTest@4803b726]" started-at="2026-05-14T10:39:34 IST" name="openSite" finished-at="2026-05-14T10:39:35 IST" duration-ms="491" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openSite -->
+        <test-method signature="TC_003_header_exists()[pri:0, instance:com.sqa.PixelsSuiteTest@4803b726]" started-at="2026-05-14T10:39:35 IST" name="TC_003_header_exists" finished-at="2026-05-14T10:39:35 IST" duration-ms="320" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_003_header_exists -->
+        <test-method is-config="true" signature="openSite()[pri:0, instance:com.sqa.PixelsSuiteTest@4803b726]" started-at="2026-05-14T10:39:35 IST" name="openSite" finished-at="2026-05-14T10:39:36 IST" duration-ms="849" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openSite -->
+        <test-method signature="TC_005_footer_exists()[pri:0, instance:com.sqa.PixelsSuiteTest@4803b726]" started-at="2026-05-14T10:39:36 IST" name="TC_005_footer_exists" finished-at="2026-05-14T10:39:37 IST" duration-ms="1112" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_005_footer_exists -->
+        <test-method is-config="true" signature="openSite()[pri:0, instance:com.sqa.PixelsSuiteTest@4803b726]" started-at="2026-05-14T10:39:37 IST" name="openSite" finished-at="2026-05-14T10:39:38 IST" duration-ms="711" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openSite -->
+        <test-method signature="TC_006_links_exist()[pri:0, instance:com.sqa.PixelsSuiteTest@4803b726]" started-at="2026-05-14T10:39:38 IST" name="TC_006_links_exist" finished-at="2026-05-14T10:39:38 IST" duration-ms="116" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_006_links_exist -->
+        <test-method is-config="true" signature="openSite()[pri:0, instance:com.sqa.PixelsSuiteTest@4803b726]" started-at="2026-05-14T10:39:38 IST" name="openSite" finished-at="2026-05-14T10:39:38 IST" duration-ms="311" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openSite -->
+        <test-method signature="TC_007_buttons_exist()[pri:0, instance:com.sqa.PixelsSuiteTest@4803b726]" started-at="2026-05-14T10:39:38 IST" name="TC_007_buttons_exist" finished-at="2026-05-14T10:39:38 IST" duration-ms="84" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_007_buttons_exist -->
+        <test-method is-config="true" signature="openSite()[pri:0, instance:com.sqa.PixelsSuiteTest@4803b726]" started-at="2026-05-14T10:39:38 IST" name="openSite" finished-at="2026-05-14T10:39:39 IST" duration-ms="305" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openSite -->
+        <test-method signature="TC_008_page_reload()[pri:0, instance:com.sqa.PixelsSuiteTest@4803b726]" started-at="2026-05-14T10:39:39 IST" name="TC_008_page_reload" finished-at="2026-05-14T10:39:42 IST" duration-ms="2981" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_008_page_reload -->
+        <test-method is-config="true" signature="openSite()[pri:0, instance:com.sqa.PixelsSuiteTest@4803b726]" started-at="2026-05-14T10:39:42 IST" name="openSite" finished-at="2026-05-14T10:39:42 IST" duration-ms="105" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openSite -->
+        <test-method signature="TC_009_scroll_test()[pri:0, instance:com.sqa.PixelsSuiteTest@4803b726]" started-at="2026-05-14T10:39:42 IST" name="TC_009_scroll_test" finished-at="2026-05-14T10:39:42 IST" duration-ms="191" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_009_scroll_test -->
+        <test-method is-config="true" signature="openSite()[pri:0, instance:com.sqa.PixelsSuiteTest@4803b726]" started-at="2026-05-14T10:39:42 IST" name="openSite" finished-at="2026-05-14T10:39:42 IST" duration-ms="178" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openSite -->
+        <test-method signature="TC_010_window_check()[pri:0, instance:com.sqa.PixelsSuiteTest@4803b726]" started-at="2026-05-14T10:39:42 IST" name="TC_010_window_check" finished-at="2026-05-14T10:39:42 IST" duration-ms="19" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_010_window_check -->
+        <test-method is-config="true" signature="openSite()[pri:0, instance:com.sqa.PixelsSuiteTest@4803b726]" started-at="2026-05-14T10:39:42 IST" name="openSite" finished-at="2026-05-14T10:39:42 IST" duration-ms="206" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openSite -->
+        <test-method signature="TC_011_nav_exists()[pri:0, instance:com.sqa.PixelsSuiteTest@4803b726]" started-at="2026-05-14T10:39:42 IST" name="TC_011_nav_exists" finished-at="2026-05-14T10:39:42 IST" duration-ms="49" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_011_nav_exists -->
+        <test-method is-config="true" signature="openSite()[pri:0, instance:com.sqa.PixelsSuiteTest@4803b726]" started-at="2026-05-14T10:39:42 IST" name="openSite" finished-at="2026-05-14T10:39:43 IST" duration-ms="154" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openSite -->
+        <test-method signature="TC_012_links_clickable()[pri:0, instance:com.sqa.PixelsSuiteTest@4803b726]" started-at="2026-05-14T10:39:43 IST" name="TC_012_links_clickable" finished-at="2026-05-14T10:39:43 IST" duration-ms="86" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_012_links_clickable -->
+        <test-method is-config="true" signature="openSite()[pri:0, instance:com.sqa.PixelsSuiteTest@4803b726]" started-at="2026-05-14T10:39:43 IST" name="openSite" finished-at="2026-05-14T10:39:43 IST" duration-ms="177" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openSite -->
+        <test-method signature="TC_013_external_links()[pri:0, instance:com.sqa.PixelsSuiteTest@4803b726]" started-at="2026-05-14T10:39:43 IST" name="TC_013_external_links" finished-at="2026-05-14T10:39:43 IST" duration-ms="60" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_013_external_links -->
+        <test-method is-config="true" signature="openSite()[pri:0, instance:com.sqa.PixelsSuiteTest@4803b726]" started-at="2026-05-14T10:39:43 IST" name="openSite" finished-at="2026-05-14T10:39:43 IST" duration-ms="228" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openSite -->
+        <test-method signature="TC_014_page_stability()[pri:0, instance:com.sqa.PixelsSuiteTest@4803b726]" started-at="2026-05-14T10:39:43 IST" name="TC_014_page_stability" finished-at="2026-05-14T10:39:44 IST" duration-ms="1176" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_014_page_stability -->
+        <test-method is-config="true" signature="openSite()[pri:0, instance:com.sqa.PixelsSuiteTest@4803b726]" started-at="2026-05-14T10:39:44 IST" name="openSite" finished-at="2026-05-14T10:39:45 IST" duration-ms="186" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openSite -->
+        <test-method signature="TC_015_body_not_empty()[pri:0, instance:com.sqa.PixelsSuiteTest@4803b726]" started-at="2026-05-14T10:39:45 IST" name="TC_015_body_not_empty" finished-at="2026-05-14T10:39:45 IST" duration-ms="72" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_015_body_not_empty -->
+        <test-method is-config="true" signature="openSite()[pri:0, instance:com.sqa.PixelsSuiteTest@4803b726]" started-at="2026-05-14T10:39:45 IST" name="openSite" finished-at="2026-05-14T10:39:45 IST" duration-ms="220" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openSite -->
+        <test-method signature="TC_016_ui_render()[pri:0, instance:com.sqa.PixelsSuiteTest@4803b726]" started-at="2026-05-14T10:39:45 IST" name="TC_016_ui_render" finished-at="2026-05-14T10:39:45 IST" duration-ms="63" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_016_ui_render -->
+        <test-method is-config="true" signature="openSite()[pri:0, instance:com.sqa.PixelsSuiteTest@4803b726]" started-at="2026-05-14T10:39:45 IST" name="openSite" finished-at="2026-05-14T10:39:45 IST" duration-ms="245" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openSite -->
+        <test-method signature="TC_017_dom_exists()[pri:0, instance:com.sqa.PixelsSuiteTest@4803b726]" started-at="2026-05-14T10:39:45 IST" name="TC_017_dom_exists" finished-at="2026-05-14T10:39:45 IST" duration-ms="36" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_017_dom_exists -->
+        <test-method is-config="true" signature="openSite()[pri:0, instance:com.sqa.PixelsSuiteTest@4803b726]" started-at="2026-05-14T10:39:45 IST" name="openSite" finished-at="2026-05-14T10:39:45 IST" duration-ms="221" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openSite -->
+        <test-method signature="TC_018_scroll_top_bottom()[pri:0, instance:com.sqa.PixelsSuiteTest@4803b726]" started-at="2026-05-14T10:39:45 IST" name="TC_018_scroll_top_bottom" finished-at="2026-05-14T10:39:45 IST" duration-ms="62" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_018_scroll_top_bottom -->
+        <test-method is-config="true" signature="openSite()[pri:0, instance:com.sqa.PixelsSuiteTest@4803b726]" started-at="2026-05-14T10:39:45 IST" name="openSite" finished-at="2026-05-14T10:39:46 IST" duration-ms="235" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openSite -->
+        <test-method signature="TC_019_elements_loaded()[pri:0, instance:com.sqa.PixelsSuiteTest@4803b726]" started-at="2026-05-14T10:39:46 IST" name="TC_019_elements_loaded" finished-at="2026-05-14T10:39:46 IST" duration-ms="84" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_019_elements_loaded -->
+        <test-method is-config="true" signature="openSite()[pri:0, instance:com.sqa.PixelsSuiteTest@4803b726]" started-at="2026-05-14T10:39:46 IST" name="openSite" finished-at="2026-05-14T10:39:46 IST" duration-ms="304" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openSite -->
+        <test-method signature="TC_020_page_title_check()[pri:0, instance:com.sqa.PixelsSuiteTest@4803b726]" started-at="2026-05-14T10:39:46 IST" name="TC_020_page_title_check" finished-at="2026-05-14T10:39:46 IST" duration-ms="38" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_020_page_title_check -->
+        <test-method is-config="true" signature="openSite()[pri:0, instance:com.sqa.PixelsSuiteTest@4803b726]" started-at="2026-05-14T10:39:46 IST" name="openSite" finished-at="2026-05-14T10:39:46 IST" duration-ms="299" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openSite -->
+        <test-method signature="TC_022_svg_loaded()[pri:0, instance:com.sqa.PixelsSuiteTest@4803b726]" started-at="2026-05-14T10:39:46 IST" name="TC_022_svg_loaded" finished-at="2026-05-14T10:39:47 IST" duration-ms="291" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_022_svg_loaded -->
+        <test-method is-config="true" signature="openSite()[pri:0, instance:com.sqa.PixelsSuiteTest@4803b726]" started-at="2026-05-14T10:39:47 IST" name="openSite" finished-at="2026-05-14T10:39:47 IST" duration-ms="495" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openSite -->
+        <test-method signature="TC_023_forms_exist()[pri:0, instance:com.sqa.PixelsSuiteTest@4803b726]" started-at="2026-05-14T10:39:47 IST" name="TC_023_forms_exist" finished-at="2026-05-14T10:39:47 IST" duration-ms="109" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_023_forms_exist -->
+        <test-method is-config="true" signature="openSite()[pri:0, instance:com.sqa.PixelsSuiteTest@4803b726]" started-at="2026-05-14T10:39:47 IST" name="openSite" finished-at="2026-05-14T10:39:47 IST" duration-ms="137" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openSite -->
+        <test-method signature="TC_024_inputs_exist()[pri:0, instance:com.sqa.PixelsSuiteTest@4803b726]" started-at="2026-05-14T10:39:47 IST" name="TC_024_inputs_exist" finished-at="2026-05-14T10:39:48 IST" duration-ms="155" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_024_inputs_exist -->
+        <test-method is-config="true" signature="openSite()[pri:0, instance:com.sqa.PixelsSuiteTest@4803b726]" started-at="2026-05-14T10:39:48 IST" name="openSite" finished-at="2026-05-14T10:39:48 IST" duration-ms="230" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openSite -->
+        <test-method signature="TC_025_text_visible()[pri:0, instance:com.sqa.PixelsSuiteTest@4803b726]" started-at="2026-05-14T10:39:48 IST" name="TC_025_text_visible" finished-at="2026-05-14T10:39:48 IST" duration-ms="70" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_025_text_visible -->
+        <test-method is-config="true" signature="openSite()[pri:0, instance:com.sqa.PixelsSuiteTest@4803b726]" started-at="2026-05-14T10:39:48 IST" name="openSite" finished-at="2026-05-14T10:39:48 IST" duration-ms="310" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openSite -->
+        <test-method signature="TC_026_layout_check()[pri:0, instance:com.sqa.PixelsSuiteTest@4803b726]" started-at="2026-05-14T10:39:48 IST" name="TC_026_layout_check" finished-at="2026-05-14T10:39:48 IST" duration-ms="120" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_026_layout_check -->
+        <test-method is-config="true" signature="openSite()[pri:0, instance:com.sqa.PixelsSuiteTest@4803b726]" started-at="2026-05-14T10:39:48 IST" name="openSite" finished-at="2026-05-14T10:39:49 IST" duration-ms="451" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openSite -->
+        <test-method signature="TC_027_reload_check()[pri:0, instance:com.sqa.PixelsSuiteTest@4803b726]" started-at="2026-05-14T10:39:49 IST" name="TC_027_reload_check" finished-at="2026-05-14T10:39:50 IST" duration-ms="813" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_027_reload_check -->
+        <test-method is-config="true" signature="openSite()[pri:0, instance:com.sqa.PixelsSuiteTest@4803b726]" started-at="2026-05-14T10:39:50 IST" name="openSite" finished-at="2026-05-14T10:39:50 IST" duration-ms="133" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openSite -->
+        <test-method signature="TC_028_click_test()[pri:0, instance:com.sqa.PixelsSuiteTest@4803b726]" started-at="2026-05-14T10:39:50 IST" name="TC_028_click_test" finished-at="2026-05-14T10:39:50 IST" duration-ms="642" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_028_click_test -->
+        <test-method is-config="true" signature="openSite()[pri:0, instance:com.sqa.PixelsSuiteTest@4803b726]" started-at="2026-05-14T10:39:50 IST" name="openSite" finished-at="2026-05-14T10:39:51 IST" duration-ms="288" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openSite -->
+        <test-method signature="TC_029_hover_test()[pri:0, instance:com.sqa.PixelsSuiteTest@4803b726]" started-at="2026-05-14T10:39:51 IST" name="TC_029_hover_test" finished-at="2026-05-14T10:39:51 IST" duration-ms="328" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_029_hover_test -->
+        <test-method is-config="true" signature="openSite()[pri:0, instance:com.sqa.PixelsSuiteTest@4803b726]" started-at="2026-05-14T10:39:51 IST" name="openSite" finished-at="2026-05-14T10:39:51 IST" duration-ms="359" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openSite -->
+        <test-method signature="TC_030_stability_check()[pri:0, instance:com.sqa.PixelsSuiteTest@4803b726]" started-at="2026-05-14T10:39:51 IST" name="TC_030_stability_check" finished-at="2026-05-14T10:39:52 IST" duration-ms="187" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_030_stability_check -->
+        <test-method is-config="true" signature="openSite()[pri:0, instance:com.sqa.PixelsSuiteTest@4803b726]" started-at="2026-05-14T10:39:52 IST" name="openSite" finished-at="2026-05-14T10:39:52 IST" duration-ms="185" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openSite -->
+        <test-method signature="TC_031_js_execution()[pri:0, instance:com.sqa.PixelsSuiteTest@4803b726]" started-at="2026-05-14T10:39:52 IST" name="TC_031_js_execution" finished-at="2026-05-14T10:39:52 IST" duration-ms="48" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_031_js_execution -->
+        <test-method is-config="true" signature="openSite()[pri:0, instance:com.sqa.PixelsSuiteTest@4803b726]" started-at="2026-05-14T10:39:52 IST" name="openSite" finished-at="2026-05-14T10:39:52 IST" duration-ms="214" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openSite -->
+        <test-method signature="TC_032_page_source_check()[pri:0, instance:com.sqa.PixelsSuiteTest@4803b726]" started-at="2026-05-14T10:39:52 IST" name="TC_032_page_source_check" finished-at="2026-05-14T10:39:52 IST" duration-ms="34" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_032_page_source_check -->
+        <test-method is-config="true" signature="openSite()[pri:0, instance:com.sqa.PixelsSuiteTest@4803b726]" started-at="2026-05-14T10:39:52 IST" name="openSite" finished-at="2026-05-14T10:39:52 IST" duration-ms="300" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openSite -->
+        <test-method signature="TC_033_refresh_stability()[pri:0, instance:com.sqa.PixelsSuiteTest@4803b726]" started-at="2026-05-14T10:39:52 IST" name="TC_033_refresh_stability" finished-at="2026-05-14T10:39:58 IST" duration-ms="5516" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_033_refresh_stability -->
+        <test-method is-config="true" signature="openSite()[pri:0, instance:com.sqa.PixelsSuiteTest@4803b726]" started-at="2026-05-14T10:39:58 IST" name="openSite" finished-at="2026-05-14T10:39:58 IST" duration-ms="207" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openSite -->
+        <test-method signature="TC_034_anchor_check()[pri:0, instance:com.sqa.PixelsSuiteTest@4803b726]" started-at="2026-05-14T10:39:58 IST" name="TC_034_anchor_check" finished-at="2026-05-14T10:39:58 IST" duration-ms="79" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_034_anchor_check -->
+        <test-method is-config="true" signature="openSite()[pri:0, instance:com.sqa.PixelsSuiteTest@4803b726]" started-at="2026-05-14T10:39:58 IST" name="openSite" finished-at="2026-05-14T10:39:58 IST" duration-ms="229" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openSite -->
+        <test-method signature="TC_035_interaction_test()[pri:0, instance:com.sqa.PixelsSuiteTest@4803b726]" started-at="2026-05-14T10:39:58 IST" name="TC_035_interaction_test" finished-at="2026-05-14T10:39:59 IST" duration-ms="185" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_035_interaction_test -->
+        <test-method is-config="true" signature="openSite()[pri:0, instance:com.sqa.PixelsSuiteTest@4803b726]" started-at="2026-05-14T10:39:59 IST" name="openSite" finished-at="2026-05-14T10:39:59 IST" duration-ms="466" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openSite -->
+        <test-method signature="TC_036_reload_test()[pri:0, instance:com.sqa.PixelsSuiteTest@4803b726]" started-at="2026-05-14T10:39:59 IST" name="TC_036_reload_test" finished-at="2026-05-14T10:40:02 IST" duration-ms="2854" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_036_reload_test -->
+        <test-method is-config="true" signature="openSite()[pri:0, instance:com.sqa.PixelsSuiteTest@4803b726]" started-at="2026-05-14T10:40:02 IST" name="openSite" finished-at="2026-05-14T10:40:02 IST" duration-ms="302" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openSite -->
+        <test-method signature="TC_037_responsiveness_check()[pri:0, instance:com.sqa.PixelsSuiteTest@4803b726]" started-at="2026-05-14T10:40:02 IST" name="TC_037_responsiveness_check" finished-at="2026-05-14T10:40:03 IST" duration-ms="533" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_037_responsiveness_check -->
+        <test-method is-config="true" signature="openSite()[pri:0, instance:com.sqa.PixelsSuiteTest@4803b726]" started-at="2026-05-14T10:40:03 IST" name="openSite" finished-at="2026-05-14T10:40:03 IST" duration-ms="281" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openSite -->
+        <test-method signature="TC_038_tablet_view()[pri:0, instance:com.sqa.PixelsSuiteTest@4803b726]" started-at="2026-05-14T10:40:03 IST" name="TC_038_tablet_view" finished-at="2026-05-14T10:40:03 IST" duration-ms="465" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_038_tablet_view -->
+        <test-method is-config="true" signature="openSite()[pri:0, instance:com.sqa.PixelsSuiteTest@4803b726]" started-at="2026-05-14T10:40:03 IST" name="openSite" finished-at="2026-05-14T10:40:04 IST" duration-ms="128" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openSite -->
+        <test-method signature="TC_039_desktop_view()[pri:0, instance:com.sqa.PixelsSuiteTest@4803b726]" started-at="2026-05-14T10:40:04 IST" name="TC_039_desktop_view" finished-at="2026-05-14T10:40:04 IST" duration-ms="558" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_039_desktop_view -->
+        <test-method is-config="true" signature="openSite()[pri:0, instance:com.sqa.PixelsSuiteTest@4803b726]" started-at="2026-05-14T10:40:04 IST" name="openSite" finished-at="2026-05-14T10:40:04 IST" duration-ms="214" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openSite -->
+        <test-method signature="TC_040_scroll_test()[pri:0, instance:com.sqa.PixelsSuiteTest@4803b726]" started-at="2026-05-14T10:40:04 IST" name="TC_040_scroll_test" finished-at="2026-05-14T10:40:04 IST" duration-ms="43" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_040_scroll_test -->
+        <test-method is-config="true" signature="openSite()[pri:0, instance:com.sqa.PixelsSuiteTest@4803b726]" started-at="2026-05-14T10:40:04 IST" name="openSite" finished-at="2026-05-14T10:40:04 IST" duration-ms="90" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openSite -->
+        <test-method signature="TC_041_back_forward_navigation()[pri:0, instance:com.sqa.PixelsSuiteTest@4803b726]" started-at="2026-05-14T10:40:04 IST" name="TC_041_back_forward_navigation" finished-at="2026-05-14T10:40:06 IST" duration-ms="1706" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_041_back_forward_navigation -->
+        <test-method is-config="true" signature="openSite()[pri:0, instance:com.sqa.PixelsSuiteTest@4803b726]" started-at="2026-05-14T10:40:06 IST" name="openSite" finished-at="2026-05-14T10:40:06 IST" duration-ms="203" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openSite -->
+        <test-method signature="TC_042_url_check()[pri:0, instance:com.sqa.PixelsSuiteTest@4803b726]" started-at="2026-05-14T10:40:06 IST" name="TC_042_url_check" finished-at="2026-05-14T10:40:06 IST" duration-ms="16" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_042_url_check -->
+        <test-method is-config="true" signature="openSite()[pri:0, instance:com.sqa.PixelsSuiteTest@4803b726]" started-at="2026-05-14T10:40:06 IST" name="openSite" finished-at="2026-05-14T10:40:07 IST" duration-ms="231" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openSite -->
+        <test-method signature="TC_043_refresh_stability()[pri:0, instance:com.sqa.PixelsSuiteTest@4803b726]" started-at="2026-05-14T10:40:07 IST" name="TC_043_refresh_stability" finished-at="2026-05-14T10:40:08 IST" duration-ms="1095" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_043_refresh_stability -->
+        <test-method is-config="true" signature="openSite()[pri:0, instance:com.sqa.PixelsSuiteTest@4803b726]" started-at="2026-05-14T10:40:08 IST" name="openSite" finished-at="2026-05-14T10:40:08 IST" duration-ms="166" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openSite -->
+        <test-method signature="TC_044_page_stability_check()[pri:0, instance:com.sqa.PixelsSuiteTest@4803b726]" started-at="2026-05-14T10:40:08 IST" name="TC_044_page_stability_check" finished-at="2026-05-14T10:40:08 IST" duration-ms="93" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_044_page_stability_check -->
+        <test-method is-config="true" signature="openSite()[pri:0, instance:com.sqa.PixelsSuiteTest@4803b726]" started-at="2026-05-14T10:40:08 IST" name="openSite" finished-at="2026-05-14T10:40:08 IST" duration-ms="152" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openSite -->
+        <test-method signature="TC_045_dom_stability()[pri:0, instance:com.sqa.PixelsSuiteTest@4803b726]" started-at="2026-05-14T10:40:08 IST" name="TC_045_dom_stability" finished-at="2026-05-14T10:40:08 IST" duration-ms="44" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_045_dom_stability -->
+        <test-method is-config="true" signature="openSite()[pri:0, instance:com.sqa.PixelsSuiteTest@4803b726]" started-at="2026-05-14T10:40:08 IST" name="openSite" finished-at="2026-05-14T10:40:08 IST" duration-ms="176" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openSite -->
+        <test-method signature="TC_046_element_presence()[pri:0, instance:com.sqa.PixelsSuiteTest@4803b726]" started-at="2026-05-14T10:40:08 IST" name="TC_046_element_presence" finished-at="2026-05-14T10:40:08 IST" duration-ms="95" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_046_element_presence -->
+        <test-method is-config="true" signature="openSite()[pri:0, instance:com.sqa.PixelsSuiteTest@4803b726]" started-at="2026-05-14T10:40:08 IST" name="openSite" finished-at="2026-05-14T10:40:09 IST" duration-ms="188" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openSite -->
+        <test-method signature="TC_047_UI_consistency()[pri:0, instance:com.sqa.PixelsSuiteTest@4803b726]" started-at="2026-05-14T10:40:09 IST" name="TC_047_UI_consistency" finished-at="2026-05-14T10:40:09 IST" duration-ms="73" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_047_UI_consistency -->
+        <test-method is-config="true" signature="openSite()[pri:0, instance:com.sqa.PixelsSuiteTest@4803b726]" started-at="2026-05-14T10:40:09 IST" name="openSite" finished-at="2026-05-14T10:40:09 IST" duration-ms="144" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openSite -->
+        <test-method signature="TC_048_reload_consistency()[pri:0, instance:com.sqa.PixelsSuiteTest@4803b726]" started-at="2026-05-14T10:40:09 IST" name="TC_048_reload_consistency" finished-at="2026-05-14T10:40:11 IST" duration-ms="2460" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_048_reload_consistency -->
+        <test-method is-config="true" signature="openSite()[pri:0, instance:com.sqa.PixelsSuiteTest@4803b726]" started-at="2026-05-14T10:40:11 IST" name="openSite" finished-at="2026-05-14T10:40:11 IST" duration-ms="44" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openSite -->
+        <test-method signature="TC_049_final_health_check()[pri:0, instance:com.sqa.PixelsSuiteTest@4803b726]" started-at="2026-05-14T10:40:11 IST" name="TC_049_final_health_check" finished-at="2026-05-14T10:40:12 IST" duration-ms="153" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_049_final_health_check -->
+        <test-method is-config="true" signature="openSite()[pri:0, instance:com.sqa.PixelsSuiteTest@4803b726]" started-at="2026-05-14T10:40:12 IST" name="openSite" finished-at="2026-05-14T10:40:12 IST" duration-ms="149" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openSite -->
+        <test-method signature="TC_050_teardown_check()[pri:0, instance:com.sqa.PixelsSuiteTest@4803b726]" started-at="2026-05-14T10:40:12 IST" name="TC_050_teardown_check" finished-at="2026-05-14T10:40:12 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_050_teardown_check -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.sqa.PixelsSuiteTest@4803b726]" started-at="2026-05-14T10:40:12 IST" name="tearDown" finished-at="2026-05-14T10:40:12 IST" duration-ms="674" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.sqa.PixelsSuiteTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
